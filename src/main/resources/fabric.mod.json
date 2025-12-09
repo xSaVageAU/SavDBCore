@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "savdbcore",
+	"version": "${version}",
+	"name": "Savs DB Core",
+	"description": "Core database and Redis library for Savage's server-side mods. Provides MySQL, PostgreSQL, SQLite support with HikariCP pooling, Redis pub/sub via Lettuce, and async utilities.",
+	"authors": [
+		"Savage"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/savdbcore/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"savage.savdbcore.SavDBCore"
+		]
+	},
+	"mixins": [
+		"savdbcore.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
