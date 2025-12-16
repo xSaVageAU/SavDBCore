@@ -9,8 +9,8 @@ import org.slf4j.LoggerFactory;
  * Savs DB Core - Database and Redis library for Fabric server mods.
  * 
  * This mod provides:
+ * This mod provides:
  * - MySQL, PostgreSQL, and SQLite storage with HikariCP connection pooling
- * - Redis pub/sub client using Lettuce
  * - Async executor for database operations
  * - JSON config loader utilities
  * 
